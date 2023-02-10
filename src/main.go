@@ -5,6 +5,5 @@ import (
 )
 
 func main() {
-	module.InitStatus()
 	module.StartDay()
 }

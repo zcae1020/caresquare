@@ -1,9 +1,12 @@
 package module
 
-import "myconstant"
+import (
+	"fmt"
+	"myconstant"
+)
 
 func printTime(hour int, minute int) {
-
+	fmt.Printf("현재 시간: %d시, %d분\n", hour, minute)
 }
 
 func printDay(status [myconstant.MAX_STATUS_TYPE]int, actions []int) {

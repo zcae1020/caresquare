@@ -1,5 +1,22 @@
 package module
 
-func chooseAction() int {
+import (
+	"fmt"
+	"strconv"
+)
 
+func chooseAction() int {
+	action := ""
+
+	fmt.Println("행동을 고르세요.\n0. 공부하기 1. 식사하기 2. 화장실가기 3. 숙면하기 4. 놀기 5. 씻기 6. 취업준비하기")
+	fmt.Sscan(action)
+
+	actionNum, err := strconv.Atoi(action)
+
+	if err != nil {
+		fmt.Println("올바른 숫자로 입력하세요.")
+		return chooseAction()
+	}
+
+	return actionNum
 }

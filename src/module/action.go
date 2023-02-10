@@ -2,6 +2,10 @@ package module
 
 import "myconstant"
 
-func action(status [myconstant.MAX_STATUS_TYPE]int) int {
+const STATE_CHANGE_BY_ACTION = 50
 
+func action(status [myconstant.MAX_STATUS_TYPE]int) int {
+	action := chooseAction()
+	status[action] -= STATE_CHANGE_BY_ACTION
+	return action
 }

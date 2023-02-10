@@ -2,8 +2,10 @@ package module
 
 import "myconstant"
 
-func getCurrentTime(time int) (int, int) {
+const MINUTE_OF_HOUR = 60
 
+func getCurrentTime(time int) (int, int) {
+	return time / MINUTE_OF_HOUR, time % MINUTE_OF_HOUR
 }
 
 func changeStatusByTime() {

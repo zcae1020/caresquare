@@ -20,5 +20,5 @@ func StartDay() {
 		myAction = append(myAction, action(myStatus))
 	}
 
-	PrintDay(myAction)
+	printDay(myStatus, myAction)
 }

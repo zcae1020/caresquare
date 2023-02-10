@@ -1,5 +1,7 @@
 package module
 
-func action() int {
+import "myconstant"
+
+func action(status [myconstant.MAX_STATUS_TYPE]int) int {
 
 }

@@ -1,6 +1,10 @@
 package main
 
+import (
+	"module"
+)
+
 func main() {
-	init.InitStatus()
-	init.StartDay()
+	module.InitStatus()
+	module.StartDay()
 }

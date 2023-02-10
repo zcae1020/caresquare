@@ -1,10 +1,10 @@
 package module
 
-func getCurrentTime() (int, int) {
+func getCurrentTime(time int) (int, int) {
 
 }
 
-func printTime(time int) {
+func printTime(hour int, minute int) {
 
 }
 

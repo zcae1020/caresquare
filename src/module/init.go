@@ -12,11 +12,12 @@ func InitStatus(status []int) {
 
 func StartDay() {
 	var myAction []int
+	var myStatus [myconstant.MAX_STATUS_TYPE]int
 	time := 0
 
 	for time <= myconstant.MINUTE_OF_DAY {
-		time = nextTime(time)
-		myAction = append(myAction, action())
+		time = nextTime(myStatus, time)
+		myAction = append(myAction, action(myStatus))
 	}
 
 	PrintDay(myAction)

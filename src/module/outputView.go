@@ -52,6 +52,7 @@ func printStatus(status [myconstant.MAX_STATUS_TYPE]int) {
 	for i := range diagnose(status) {
 		fmt.Printf("%s ", statusToString(i))
 	}
+	fmt.Println()
 }
 
 func statusToString(status int) string {
@@ -71,4 +72,5 @@ func statusToString(status int) string {
 	case myconstant.Job:
 		return "취준"
 	}
+	return ""
 }

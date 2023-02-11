@@ -43,5 +43,24 @@ func printAction(action int) {
 }
 
 func printStatus(status [myconstant.MAX_STATUS_TYPE]int) {
-
+	for i := 0; i < myconstant.MAX_STATUS_TYPE; i++ {
+		switch myconstant.Status(i) {
+		case myconstant.Study:
+			fmt.Print(" 성장: ")
+		case myconstant.Eat:
+			fmt.Print(" 식사: ")
+		case myconstant.Toliet:
+			fmt.Print(" 화장실: ")
+		case myconstant.Sleep:
+			fmt.Print(" 숙면: ")
+		case myconstant.Play:
+			fmt.Print(" 놀이: ")
+		case myconstant.Wash:
+			fmt.Print(" 씻기: ")
+		case myconstant.Job:
+			fmt.Print(" 취준: ")
+		}
+		fmt.Print(status[i])
+	}
+	fmt.Println()
 }

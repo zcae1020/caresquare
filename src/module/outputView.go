@@ -15,14 +15,17 @@ func printDay(status [myconstant.MAX_STATUS_TYPE]int, actions []int) {
 
 	fmt.Println("\n오늘 하루 정리\n")
 
-	for time <= myconstant.MINUTE_OF_DAY {
-		time += myconstant.TIME_INTERVAL
+	for time < myconstant.MINUTE_OF_DAY {
 		printTime(getCurrentTime(time))
 		printAction(actions[actionIdx])
+		time += myconstant.TIME_INTERVAL
 		actionIdx++
 	}
 
 	printStatus(status)
+
+	var tmp string
+	fmt.Scan(&tmp)
 }
 
 func printAction(action int) {

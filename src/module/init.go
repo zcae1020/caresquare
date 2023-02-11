@@ -1,6 +1,7 @@
 package module
 
 import (
+	"fmt"
 	"myconstant"
 )
 
@@ -16,10 +17,11 @@ func StartDay() {
 	time := 0
 
 	initStatus(&myStatus)
+	fmt.Println("현재 시각 8시, 기상!")
 
 	for time <= myconstant.MINUTE_OF_DAY {
-		time = nextTime(&myStatus, time)
 		myAction = append(myAction, action(&myStatus))
+		time = nextTime(&myStatus, time)
 	}
 
 	printDay(myStatus, myAction)

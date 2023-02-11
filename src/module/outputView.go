@@ -49,8 +49,8 @@ func printStatus(status [myconstant.MAX_STATUS_TYPE]int) {
 	fmt.Println()
 
 	fmt.Print("보충 필요: ")
-	for i := range diagnose(status) {
-		fmt.Printf("%s ", statusToString(i))
+	for _, value := range diagnose(status) {
+		fmt.Printf("%s ", statusToString(value))
 	}
 	fmt.Println()
 }

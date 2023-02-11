@@ -3,7 +3,7 @@ package module
 import "myconstant"
 
 const MINUTE_OF_HOUR = 60
-const STATE_CHANGE_PER_TIME_INTREVAL = 5
+const STATE_CHANGE_PER_TIME_INTREVAL = 3
 const HOUR_OF_DAY = 24
 const WAKE_HOUR = 8
 

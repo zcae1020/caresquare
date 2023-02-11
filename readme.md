@@ -13,7 +13,7 @@
     - [x] 시간에 따른 상태변화 - timer: changeStatusByTime()
     - [x] 시간 계산하기 - timer: getCurrentTime()
     - [x] 시간 출력하기 - outputView: printTime()
-  - [ ] 현재 상태 진단하기 - diagnoseis: diagnose()
+  - [x] 현재 상태 진단하기 - diagnoseis: diagnose()
     - [x] 현재 상태 출력하기 - outputView: printStatus()
   - [x] 행동하기 - action: action()
     - [x] 행동 출력하기 - outputView: printAction()

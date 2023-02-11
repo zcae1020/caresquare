@@ -13,6 +13,8 @@ func printDay(status [myconstant.MAX_STATUS_TYPE]int, actions []int) {
 	time := 0
 	actionIdx := 0
 
+	fmt.Println("\n오늘 하루 정리\n")
+
 	for time <= myconstant.MINUTE_OF_DAY {
 		time += myconstant.TIME_INTERVAL
 		printTime(getCurrentTime(time))

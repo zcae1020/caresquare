@@ -21,6 +21,7 @@ func StartDay() {
 
 	for time <= myconstant.MINUTE_OF_DAY {
 		myAction = append(myAction, action(&myStatus))
+		fmt.Println()
 		time = nextTime(&myStatus, time)
 	}
 
